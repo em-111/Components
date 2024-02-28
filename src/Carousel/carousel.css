@@ -1,0 +1,66 @@
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.carousel-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.c-images {
+    width: 90%;
+    aspect-ratio: 2 / 1.1;
+}
+
+.c-images img {
+    width: 100%;
+    aspect-ratio: 2 / 1.1;
+    border-radius: 0.5vw;
+}
+
+.c-img-left1,
+.c-img-right1,
+.c-img-left2,
+.c-img-right2 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    background-color: #3f8efc;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/code.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/Accordion/accordion.css">
+    <link rel="stylesheet" href="./src/Carousel/carousel.css">
+    <link rel="stylesheet" href="./src/Modal/modal.css">
+    <link rel="stylesheet" href="./src/File-Upload/fileUpload.css">
     <title>Components</title>
 </head>
 
 <body>
     <!-- ======================    SIDEBAR    ====================== -->
     <aside>
-        <span id="sidebar-btn"><img src="./assets/chevron-left-blue.svg" alt=""></span>
+        <span id="sidebar-btn"><img src="./assets/Icons/chevron-left-blue.svg" alt=""></span>
         <div class="aside-container">
             <h2>Components</h2>
             <div class="comp">
@@ -25,14 +29,8 @@
                 <a href="#modal">
                     <p>Modal</p>
                 </a>
-                <a href="#dropdown">
-                    <p>Dropdown</p>
-                </a>
                 <a href="#file-upload">
                     <p>File Upload</p>
-                </a>
-                <a href="#toast-notification">
-                    <p>Toast Notification</p>
                 </a>
                 <a href="#swiper">
                     <p>Swiper</p>
@@ -70,7 +68,8 @@
             <div class="acc">
                 <div class="acc12">
                     <p>Click one to close other</p>
-                    <h3 class="parents parents1">Accordion 1 <img class="rotate" src="./assets/chevron-left.svg" alt="">
+                    <h3 class="parents parents1">Accordion 1 <img class="rotate" src="./assets/Icons/chevron-left.svg"
+                            alt="">
                     </h3>
                     <p class="children children1">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia eius molestias
@@ -78,7 +77,8 @@
                         nobis
                         omnis. Dolorem, voluptatem veniam.
                     </p>
-                    <h3 class="parents parents1">Accordion 2 <img class="rotate" src="./assets/chevron-left.svg" alt="">
+                    <h3 class="parents parents1">Accordion 2 <img class="rotate" src="./assets/Icons/chevron-left.svg"
+                            alt="">
                     </h3>
                     <p class="children children1">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia eius molestias
@@ -86,7 +86,8 @@
                         nobis
                         omnis. Dolorem, voluptatem veniam.
                     </p>
-                    <h3 class="parents parents1">Accordion 3 <img class="rotate" src="./assets/chevron-left.svg" alt="">
+                    <h3 class="parents parents1">Accordion 3 <img class="rotate" src="./assets/Icons/chevron-left.svg"
+                            alt="">
                     </h3>
                     <p class=" children children1">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia eius molestias
@@ -98,7 +99,8 @@
 
                 <div class="acc12">
                     <p>Click to open and close the same</p>
-                    <h3 class="parents parents2">Accordion 1 <img class="rotate" src="./assets/chevron-left.svg" alt="">
+                    <h3 class="parents parents2">Accordion 1 <img class="rotate" src="./assets/Icons/chevron-left.svg"
+                            alt="">
                     </h3>
                     <p class="children children2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia eius molestias
@@ -106,7 +108,8 @@
                         nobis
                         omnis. Dolorem, voluptatem veniam.
                     </p>
-                    <h3 class="parents parents2">Accordion 2 <img class="rotate" src="./assets/chevron-left.svg" alt="">
+                    <h3 class="parents parents2">Accordion 2 <img class="rotate" src="./assets/Icons/chevron-left.svg"
+                            alt="">
                     </h3>
                     <p class="children children2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia eius molestias
@@ -114,7 +117,8 @@
                         nobis
                         omnis. Dolorem, voluptatem veniam.
                     </p>
-                    <h3 class="parents parents2">Accordion 3 <img class="rotate" src="./assets/chevron-left.svg" alt="">
+                    <h3 class="parents parents2">Accordion 3 <img class="rotate" src="./assets/Icons/chevron-left.svg"
+                            alt="">
                     </h3>
                     <p class="children children2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum mollitia eius molestias
@@ -126,30 +130,31 @@
             </div>
         </div>
 
+        <!-- ======================    CAROUSEL    ====================== -->
         <div class="box" id="carousel">
             <h1 class="title">Carousel</h1>
             <div class="c-gap">
                 <div class="carousel">
                     <div class="carousel-1">
-                        <p class="c-img-left1"><img src="./assets/chevron-left.svg" alt=""></p>
+                        <p class="c-img-left1"><img src="./assets/Icons/chevron-left.svg" alt=""></p>
 
                         <div class="c-images">
                             <img class="img-c1" src="./assets/Images/img-1.avif" alt="">
                         </div>
 
-                        <p class="c-img-right1"><img src="./assets/chevron-right.svg" alt=""></p>
+                        <p class="c-img-right1"><img src="./assets/Icons/chevron-right.svg" alt=""></p>
                     </div>
                 </div>
 
                 <div class="carousel">
                     <div class="carousel-1">
-                        <button class="c-img-left2"><img src="./assets/chevron-left.svg" alt=""></button>
+                        <button class="c-img-left2"><img src="./assets/Icons/chevron-left.svg" alt=""></button>
 
                         <div class="c-images">
                             <img class="img-c2" src="./assets/Images/img-1.avif" alt="">
                         </div>
 
-                        <button class="c-img-right2"><img src="./assets/chevron-right.svg" alt=""></button>
+                        <button class="c-img-right2"><img src="./assets/Icons/chevron-right.svg" alt=""></button>
                     </div>
                 </div>
 
@@ -179,6 +184,7 @@
             </div>
         </div>
 
+        <!-- ======================    MODAL    ====================== -->
         <div class="box" id="modal">
             <h1 class="title">Modal</h1>
             <p>click one</p>
@@ -193,9 +199,30 @@
                 <div class="modal-content"></div>
             </div>
         </div>
+
+        <!-- ======================    FILE UPLOAD    ====================== -->
+        <div class="box" id="file-upload">
+            <h1 class="title">File Upload</h1>
+            <div class="upload">
+                <div class="u">
+                    <form action="#" id="form">
+                        <input type="file" name="file" id="file" hidden>
+                    </form>
+                    <div class="form-btn">
+                        <button class="cancel-btn">Cancel</button>
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <script src="main.js" type="module"></script>
+    <script src="main.js"></script>
+    <script src="./src/Accordion/accordion.js"></script>
+    <script src="./src/Carousel/carousel.js"></script>
+    <script src="./src/Modal/modal.js" type="module"></script>
+    <script src="./src/File-Upload/fileUpload.js" type="module"></script>
 </body>
 
 </html>

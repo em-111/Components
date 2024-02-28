@@ -1,0 +1,51 @@
+.m {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.mod {
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    padding: 10px 35px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pop-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: hsla(30, 100%, 72%, 90%);
+    z-index: 5 !important;
+    display: none;
+}
+
+.modal-content {
+    width: 500px;
+    padding: 40px;
+    margin: 0 30px;
+    background-color: white;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content img {
+    align-self: center;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+
+.active2 {
+    display: flex;
+}
