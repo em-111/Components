@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 1.3rem;
+    padding-bottom: 150px;
+    width: 100%;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 0.5vw;
+    background-color: #deecfb;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ======================    SIDEBAR    ====================== */
+aside {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #deecfb;
+    z-index: 1;
+}
+
+.aside-container {
+    padding: 30px 20px;
+    position: relative;
+}
+
+.comp {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comp p {
+    padding: 3px 20px;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+}
+
+.comp p:hover {
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: #f1f7fd;
+}
+
+#sidebar-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #3f8efc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* ======================    MAIN    ====================== */
+main {
+    width: calc(100vw - 400px);
+    position: relative;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ======================    ACCORDION    ====================== */
+.accordion {
+    margin-top: 50px;
+}
+.acc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.acc12 {
+    width: 50%;
+    flex: 1 1 500px;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.parents {
+    border: 1px solid black;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: #add7f6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parents img {
+    rotate: -90deg;
+}
+
+.children {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+/* ======================    CAROUSEL    ====================== */
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.carousel-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.c-images {
+    width: 90%;
+    aspect-ratio: 2 / 1.1;
+}
+
+.c-images img {
+    width: 100%;
+    aspect-ratio: 2 / 1.1;
+    border-radius: 0.5vw;
+}
+
+.c-img-left1,
+.c-img-right1,
+.c-img-left2,
+.c-img-right2 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    background-color: #3f8efc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ======================    MODAL    ====================== */
+.m {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.mod {
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    padding: 10px 35px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pop-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: hsla(30, 100%, 72%, 90%);
+    z-index: 5 !important;
+    display: none;
+}
+
+.modal-content {
+    width: 500px;
+    padding: 40px;
+    margin: 0 30px;
+    background-color: white;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content img {
+    align-self: center;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+
+.active2 {
+    display: flex;
+}
