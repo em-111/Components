@@ -14,11 +14,33 @@ form.addEventListener("click", () => {
     input.click();
 });
 
+form.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    form.style.backgroundColor = "#f0f7fe";
+    form.style.scale = "1.1";
+});
+
+form.addEventListener("dragleave", (e) => {
+    e.preventDefault();
+    form.style.backgroundColor = "#fff";
+    form.style.scale = "1";
+});
+
+form.addEventListener("drop", (e) => {
+    e.preventDefault();
+    const dropedFile = e.dataTransfer.files[0];
+    const fileName = dropedFile.name;
+    uploadFile(fileName)
+
+    form.style.backgroundColor = "#fff";
+    form.style.scale = "1";
+});
+
 input.onchange = ({ target }) => {
     const file = target.files[0];
 
     if (file) {
-        uploadFile(file);
+        uploadFile(file.name);
     }
 };
 
@@ -28,13 +50,12 @@ const uploadFile = (file) => {
     const span1 = document.createElement("span");
 
     img.setAttribute("src", "../../assets/Icons/file-text.svg");
-    span1.textContent = file.name;
+    span1.textContent = file;
 
     li.appendChild(img);
     li.appendChild(span1);
 
     ul.appendChild(li);
-    console.log(file.name);
 
     cancelBtn.disabled = false;
     submitBtn.disabled = false;
