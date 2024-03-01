@@ -61,3 +61,12 @@ setInterval(() => {
         index4 = 1;
     }
 }, 10000);
+
+// function opcityImage() {
+//     let img = document.getElementById("");
+//     img.style.opacity = 0;
+//     setTimeout(() => {
+//         img.src = newsrc;
+//         img.style.opacity = 1;
+//     }, 500);
+// }

@@ -27,6 +27,7 @@
     width: 100%;
     aspect-ratio: 2 / 1.1;
     border-radius: 0.5vw;
+    transition: opacity 1s ease-in-out;
 }
 
 .c-img-left1,

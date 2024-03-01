@@ -28,7 +28,7 @@ form {
     cursor: pointer;
 }
 
-ul {
+.upload-list {
     width: 90%;
     height: 180px;
     list-style: none;
@@ -40,11 +40,11 @@ ul {
     scrollbar-width: none; /* Firefox 64 */
 }
 
-ul::-webkit-scrollbar {
+.upload-list::-webkit-scrollbar {
     width: 0px;
 }
 
-li {
+.upload-list li {
     background-color: #f0f7fe;
     display: flex;
     padding: 10px;

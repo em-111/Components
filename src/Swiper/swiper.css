@@ -1,0 +1,62 @@
+.sw {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sw-btn {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.swiper-1 {
+    width: 80%;
+    padding: 20px;
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+.swiper-2 {
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+}
+
+.swiper-box {
+    width: 250px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.sw-btn-left,
+.sw-btn-right {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.sw-btn-left {
+    background-image: url("../../assets/Icons/chevron-left.svg");
+}
+
+.sw-btn-right {
+    background-image: url("../../assets/Icons/chevron-right.svg");
+}
