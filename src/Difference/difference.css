@@ -13,6 +13,7 @@
     background-image: url("../../assets/Images/daisy.avif");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0.5vw;
 }
 
 .diff {
@@ -26,6 +27,7 @@
     resize: horizontal;
     overflow: auto;
     z-index: 1;
+    border-radius: 0.5vw;
 }
 
 .bar-circle {
