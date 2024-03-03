@@ -16,7 +16,7 @@
     position: relative;
 }
 
-form {
+.u form {
     width: 90%;
     border: 2px dotted black;
     border-radius: 5px;

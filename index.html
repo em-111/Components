@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/File-Upload/fileUpload.css">
     <link rel="stylesheet" href="./src/Swiper/swiper.css">
     <link rel="stylesheet" href="./src/Difference/difference.css">
+    <link rel="stylesheet" href="./src/Steps/steps.css">
     <title>Components</title>
 </head>
 
@@ -52,6 +53,7 @@
                 <a href="#drawer">
                     <p>Drawer</p>
                 </a>
+                <!-- TABBED INTERFACE -->
             </div>
         </div>
     </aside>
@@ -245,6 +247,119 @@
                 <div class="diff"></div>
             </div>
         </div>
+
+        <!-- ======================    STEPS    ====================== -->
+        <div class="box" id="steps">
+            <h1 class="title">Steps</h1>
+            <div class="steps">
+                <ul class="step">
+                    <li class="first-step">Register</li>
+                    <li class="second-step">Choose Plan</li>
+                    <li class="third-step">Purchase</li>
+                </ul>
+                <!-- ===============    REGISTER    =============== -->
+                <div class="register-box">
+                    <div class="register">
+                        <div class="register-row">
+                            <label for="register-username">Username :</label>
+                            <input type="text" name="register-username" id="register-username" placeholder="johndoe">
+                        </div>
+                        <div class="register-row">
+                            <label for="register-email">Email :</label>
+                            <input type="email" name="register-email" id="register-email"
+                                placeholder="johndoe@example.com">
+                        </div>
+                        <div class="register-row">
+                            <label for="register-password">Password :</label>
+                            <input type="password" name="register-password" id="register-password"
+                                placeholder="* * * * * * * *">
+                        </div>
+                        <div class="register-row">
+                            <button class="register-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===============    CHOOSE PLAN    =============== -->
+                <div class="choose-plan">
+                    <div class="plan plan-1">
+                        <p>Start</p>
+                        <h1>$ <span class="price">5</span></h1>
+                        <div>
+                            <p>1 User</p>
+                            <p>1 Project</p>
+                        </div>
+                        <button class="order-plan-btn">Order Now</button>
+                    </div>
+                    <div class="plan plan-2">
+                        <p>Basic</p>
+                        <h1>$ <span class="price">24</span></h1>
+                        <div>
+                            <p>5 Users</p>
+                            <p>20 Projects</p>
+                        </div>
+                        <button class="order-plan-btn">Order Now</button>
+                    </div>
+                    <div class="plan plan-3">
+                        <p>Medium</p>
+                        <h1>$ <span class="price">54</span></h1>
+                        <div>
+                            <p>100 Users</p>
+                            <p>100 Projects</p>
+                        </div>
+                        <button class="order-plan-btn">Order Now</button>
+                    </div>
+                    <div class="plan plan-4">
+                        <p>Expert</p>
+                        <h1>$ <span class="price">134</span></h1>
+                        <div>
+                            <p>Unlimited Users</p>
+                            <p>Unlimited Projects</p>
+                        </div>
+                        <button class="order-plan-btn">Order Now</button>
+                    </div>
+                </div>
+                <!-- ===============    PURCHASE    =============== -->
+                <div class="purchase-box">
+                    <div class="purchase">
+                        <div class="purchase-row">
+                            <p>Email</p>
+                            <input type="email" name="purchase-email" id="purchase-email"
+                                placeholder="johndoe@example.com">
+                        </div>
+                        <div class="purchase-row">
+                            <p>Card Number</p>
+                            <input type="number" name="cardnumber" id="cardnumber" placeholder="1234 1234 1234 1234">
+                        </div>
+                        <div class="purchase-row">
+                            <div class="month">
+                                <p>Expiration</p>
+                                <input type="number" name="expiration" id="expiration" placeholder="MM / YY">
+                            </div>
+                            <div class="cvc">
+                                <p>CVC</p>
+                                <input type="number" name="cvc" id="cvc" placeholder="CVC">
+                            </div>
+                        </div>
+                        <div class="purchase-row">
+                            <p>Card Holder Name</p>
+                            <input type="text" name="card-holder" id="card-holder" placeholder="John Doe">
+                        </div>
+                        <div class="purchase-row">
+                            <p>Postal Code</p>
+                            <input type="text" name="address" id="address" placeholder="Postal Code">
+                        </div>
+                        <div class="purchase-row">
+                            <p>Total</p>
+                            <p>$ <span class="purchase-total">123</span></p>
+                        </div>
+                        <div class="purchase-btn">Pay $<span class="purchase-total">123</span></div>
+                    </div>
+                </div>
+                <div class="success-purchase">
+                    <img src="./assets/Gif/icons8-success.gif" alt="">
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="main.js"></script>
@@ -254,6 +369,7 @@
     <script src="./src/File-Upload/fileUpload.js"></script>
     <script src="./src/Swiper/swiper.js"></script>
     <script src="./src/Difference/difference.js"></script>
+    <script src="./src/Steps/steps.js"></script>
 </body>
 
 </html>
