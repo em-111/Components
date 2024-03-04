@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border: 1px solid blue;
 }
 
 .time-line p:nth-child(even) {
