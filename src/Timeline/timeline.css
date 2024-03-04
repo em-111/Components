@@ -1,0 +1,109 @@
+.timeline {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.time-line {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid blue;
+}
+
+.time-line p:nth-child(even) {
+    align-self: flex-end;
+}
+
+.time-line p {
+    width: 40%;
+    display: flex;
+    position: relative;
+}
+
+.time-line span {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #c1c7cf;
+    border-radius: 5px;
+}
+
+.time-line p:nth-child(odd) {
+    justify-content: flex-end;
+}
+.time-line p:nth-child(odd)::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: -35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.time-line p:nth-child(odd)::before {
+    content: "";
+    width: 5px;
+    height: 85px;
+    position: absolute;
+    right: -29%;
+    top: 50%;
+}
+
+.time-line p:nth-child(even)::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: -32%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.time-line p:nth-child(even):not(p:last-child):before {
+    content: "";
+    width: 5px;
+    height: 85px;
+    position: absolute;
+    left: -25%;
+    top: 50%;
+}
+
+.time-line p:nth-child(1)::after,
+.time-line p:nth-child(2)::after,
+.time-line p:nth-child(3)::after,
+.time-line p:nth-child(4)::after,
+.time-line p:nth-child(5)::after {
+    background-color: #8a2be2;
+    background-image: url("../../assets/Icons/check.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
+
+.time-line p:nth-child(6)::after,
+.time-line p:nth-child(7)::after,
+.time-line p:nth-child(8)::after {
+    background-color: black;
+    background-image: url("../../assets/Icons/check.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
+
+.time-line p:nth-child(1)::before,
+.time-line p:nth-child(2)::before,
+.time-line p:nth-child(3)::before,
+.time-line p:nth-child(4)::before {
+    background-color: #8a2be2;
+}
+
+.time-line p:nth-child(5)::before,
+.time-line p:nth-child(6)::before,
+.time-line p:nth-child(7)::before {
+    background-color: #c1c7cf;
+}

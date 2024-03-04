@@ -167,6 +167,31 @@ const finish = () => {
     setTimeout(() => {
         successfulPurchase.style.display = "none";
         register.style.display = "flex";
+
+        const styles = `
+            .step li:nth-child(2)::before {
+                color: #000;
+                background-color: #e5e7eb;
+            }
+            .step li:first-child::after {
+                background-color: #e5e7eb;
+            }
+            .step li:nth-child(2)::before {
+                color: #000;
+                background-color: #e5e7eb;
+            }
+            .step li:first-child::after {
+                background-color: #e5e7eb;
+            }
+            .step li:nth-child(3)::before {
+                color: #000;
+                background-color: #e5e7eb;
+            }
+            .step li:nth-child(2)::after {
+                background-color: #e5e7eb;
+            }`;
+        styleElement.innerHTML = styles;
+        document.head.appendChild(styleElement);
     }, 2500);
 
     registerUsername.value = "";
