@@ -22,6 +22,14 @@ a {
     text-decoration: none;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 /* ======================    SIDEBAR    ====================== */
 aside {
     width: 250px;

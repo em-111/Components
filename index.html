@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./src/Timeline/timeline.css">
     <link rel="stylesheet" href="./src/Divider/divider.css">
     <link rel="stylesheet" href="./src/Drawer/drawer.css">
+    <link rel="stylesheet" href="./src/Tabs/tabs.css">
     <title>Components</title>
 </head>
 
@@ -57,6 +58,9 @@
                     <p>Drawer</p>
                 </a>
                 <!-- TABBED INTERFACE -->
+                <a href="#tabs">
+                    <p>Tabs</p>
+                </a>
             </div>
         </div>
     </aside>
@@ -407,6 +411,98 @@
                 </div>
             </div>
         </div>
+
+        <!-- ======================    TABS    ====================== -->
+        <div class="box" id="tabs">
+            <h1 class="title">Tabs</h1>
+            <div class="tabs">
+                <div class="tabs-list">
+                    <p class="active-tab">HTML</p>
+                    <p class="inactive-tab">CSS</p>
+                    <p class="inactive-tab">JavaScript</p>
+                </div>
+                <div class="tabs-content">
+                    <div class="ct">
+                        <div class="ct-content">
+                            <div class="html"></div>
+                            <p>
+                                <span class="bold">HyperText Markup Language</span> or <span class="bold">HTML</span> is
+                                the standard markup language for documents designed to be displayed in a web browser. It
+                                defines the content and structure of web content. It is often assisted by technologies
+                                such as <span class="underline">Cascading Style Sheets (CSS)</span> and scripting
+                                languages such as <span class="underline">JavaScript</span>.
+
+                                <br>
+                                <br>
+
+                                Web browsers receive HTML documents from a web server or from local storage and render
+                                the documents into multimedia web pages. HTML describes the structure of a web page
+                                semantically and originally included cues for its appearance.
+
+                                <br>
+                                <br>
+
+                                HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+                                other objects such as interactive forms may be embedded into the rendered page. HTML
+                                provides a means to create structured documents by denoting structural semantics for
+                                text such as headings, paragraphs, lists, links, quotes, and other items. HTML elements
+                                are delineated by tags, written using angle brackets. Tags such as
+                                <span class="bold">&lt;img&gt;</span> and <span class="bold">&lt;input&gt;</span>
+                                directly introduce content into the page. Other tags such as
+                                <span class="bold">&lt;p&gt;</span> and <span class="bold">&lt;/p&gt;</span>
+                                surround and provide information about document text and may include sub-element tags.
+                                Browsers do not display the HTML tags but use them to interpret the content of the page.
+                            </p>
+                        </div>
+                        <div class="ct-content display-none">
+                            <div class="css"></div>
+                            <p>
+                                <span class="bold">Cascading Style Sheets (CSS)</span> is a style sheet language used
+                                for specifying the presentation and styling of a document written in a markup language
+                                such as <span class="bold">HTML</span> or <span class="bold">XML</span>
+                                (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone
+                                technology of the World Wide Web, alongside <span class="bold">HTML</span> and
+                                <span class="bold">JavaScript</span>.
+
+                                <br>
+                                <br>
+
+                                CSS is designed to enable the separation of content and presentation, including layout,
+                                colors, and fonts. This separation can improve content accessibility;
+                                <sup>[further explanation needed]</sup> provide more flexibility and control in the
+                                specification of presentation characteristics; enable multiple web pages to share
+                                formatting by specifying the relevant CSS in a separate .css file, which reduces
+                                complexity and repetition in the structural content; and enable the .css file to be
+                                cached to improve the page load speed between the pages that share the file and its
+                                formatting.
+                            </p>
+                        </div>
+                        <div class="ct-content display-none">
+                            <div class="js"></div>
+                            <p>
+                                <span class="bold">JavaScript</span>, often abbreviated as <span class="bold">JS</span>,
+                                is a programming language and core technology of the World Wide Web, alongside
+                                <span class="bold">HTML</span> and <span class="bold">CSS</span>. As of 2024, 98.8% of
+                                websites use JavaScript on the client side for webpage behavior, often incorporating
+                                third-party libraries. All major web browsers have a dedicated JavaScript engine to
+                                execute the code on users' devices.
+
+                                <br>
+                                <br>
+
+                                JavaScript is a high-level, often just-in-time compiled language that conforms to the
+                                <span class="underline">ECMAScript</span> standard. It has dynamic typing,
+                                prototype-based object-orientation, and first-class functions. It is multi-paradigm,
+                                supporting event-driven, functional, and imperative programming styles. It has
+                                <span class="underline">Application Programming Interfaces</span> (APIs) for
+                                working with text, dates, regular expressions, standard data structures, and the
+                                <span class="underline">Document Object Model</span> (DOM).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="main.js"></script>
@@ -418,6 +514,7 @@
     <script src="./src/Difference/difference.js"></script>
     <script src="./src/Steps/steps.js"></script>
     <script src="./src/Drawer/drawer.js"></script>
+    <script src="./src/Tabs/tabs.js"></script>
 </body>
 
 </html>
