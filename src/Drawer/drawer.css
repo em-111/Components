@@ -1,0 +1,71 @@
+.drawer {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.drawer-btn {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #515bda;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.drawer-box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 50%);
+    z-index: 2;
+    display: none;
+}
+
+.drawer-box-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100vh;
+    background-color: #f2f2f2;
+    z-index: 2;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drawer-box-content p {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.drawer-box-content p:hover {
+    border: 2px solid #7c7c7c;
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.drawer-box .drawer-close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
