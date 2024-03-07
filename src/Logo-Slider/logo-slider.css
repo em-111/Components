@@ -1,0 +1,34 @@
+.logos {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 60px 0;
+    white-space: nowrap;
+    border-radius: 0.5vw;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    gap: 80px;
+    animation: scroll 30s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logos img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 40px;
+}
