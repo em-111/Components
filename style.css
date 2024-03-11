@@ -37,7 +37,7 @@ aside {
     position: fixed;
     top: 0;
     background-color: #deecfb;
-    z-index: 1;
+    z-index: 3;
 }
 
 .aside-container {
@@ -78,11 +78,13 @@ aside {
     background-color: #f8f9fa;
     cursor: pointer;
     z-index: 2;
+    display: none;
+    transform: rotate(180deg);
 }
 
 /* ======================    MAIN    ====================== */
 main {
-    width: calc(100vw - 370px);
+    width: calc(100% - 370px);
     position: relative;
     left: 300px;
     display: flex;
@@ -94,5 +96,51 @@ main {
 @media only screen and (min-width: 2000px) {
     main {
         width: 1600px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .box {
+        padding: 10px;
+    }
+    aside {
+        width: 30px;
+        border-right: 2px solid black;
+    }
+    .aside-container {
+        display: none;
+    }
+    #sidebar-btn {
+        display: flex;
+    }
+    #sidebar-btn {
+        display: flex;
+    }
+    main {
+        width: calc(100% - 80px);
+        left: 60px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    aside {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    aside::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    aside::-webkit-scrollbar-thumb {
+        background-color: #363daf;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        width: calc(100% - 50px);
+        left: 40px;
     }
 }

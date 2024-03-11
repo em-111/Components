@@ -1,6 +1,7 @@
 .resize-box {
     width: 100%;
     height: 500px;
+    aspect-ratio: 1 / 0.5;
     position: relative;
 }
 
@@ -43,4 +44,11 @@
     transform: translateX(-50%);
     margin-top: -25px;
     z-index: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    .resize-box {
+        height: unset;
+        aspect-ratio: 1 / 0.5;
+    }
 }

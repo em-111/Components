@@ -60,3 +60,45 @@
 .sw-btn-right {
     background-image: url("../../assets/Icons/chevron-right.svg");
 }
+
+@media only screen and (max-width: 1230px) {
+    .swiper-1 {
+        width: 100%;
+    }
+
+    .swiper-box {
+        width: 200px;
+        height: 300px;
+    }
+
+    .sw-btn {
+        width: 100%;
+    }
+
+    .sw-btn-left,
+    .sw-btn-right {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .swiper-1 {
+        width: 100%;
+    }
+
+    .swiper-box {
+        width: 120px;
+        height: 220px;
+    }
+
+    .sw-btn {
+        width: 100%;
+    }
+
+    .sw-btn-left,
+    .sw-btn-right {
+        width: 25px;
+        height: 25px;
+    }
+}

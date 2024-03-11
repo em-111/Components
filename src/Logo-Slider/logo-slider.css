@@ -5,6 +5,28 @@
     padding: 60px 0;
     white-space: nowrap;
     border-radius: 0.5vw;
+    position: relative;
+}
+
+.logos:before {
+    content: "";
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to right, #fff, hsla(0, 0%, 100%, 30%));
+    z-index: 2;
+}
+
+.logos:after {
+    content: "";
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #fff, hsla(0, 0%, 100%, 30%));
+    z-index: 2;
 }
 
 .logos:hover .logos-slide {
@@ -26,9 +48,29 @@
     }
 }
 
-.logos img {
+.logos-slide img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     margin: 0 40px;
+}
+
+@media only screen and (max-width: 650px) {
+    .logos {
+        padding: 30px 0;
+    }
+
+    .logos-slide img {
+        width: 50px;
+        height: 50px;
+        margin: 0 20px;
+    }
+
+    .logos:before {
+        width: 30px;
+    }
+
+    .logos:after {
+        width: 30px;
+    }
 }
