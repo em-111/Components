@@ -63,10 +63,10 @@
 }
 
 .time-line p:nth-child(odd)::before {
-    right: -29%;
+    right: -28.5%;
 }
 .time-line p:nth-child(even):not(p:last-child):before {
-    left: -25%;
+    left: -25.5%;
 }
 
 .time-line p:nth-child(1)::after,
@@ -121,10 +121,10 @@
     }
 
     .time-line p:nth-child(odd)::after {
-        right: -35.5%;
+        right: -36.5%;
     }
     .time-line p:nth-child(even)::after {
-        left: -35.5%;
+        left: -34.5%;
     }
     .time-line p:nth-child(odd)::before,
     .time-line p:nth-child(even):not(p:last-child):before {
